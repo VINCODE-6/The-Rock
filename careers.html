@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | The Rock Children's Home</title>  <!-- Clear page title -->
+    <link rel="stylesheet" href="Rock.css">
+<script src="https://kit.fontawesome.com/61008b03bb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Shared Header -->
+    <header id="main-header">
+        <div class="header-container">
+            <a href="Rock.html" class="logo-link" aria-label="Home page">  <!-- Logo link with ARIA for screen readers -->
+                <img src="images/logolink.jpeg" class="logo" alt="The Rock Logo">  <!-- Logo image with descriptive alt text -->
+            </a>
+            <nav id="navbar" aria-label="Main navigation">  <!-- Navigation with ARIA label -->
+                <ul>
+                    <li><a href="Rock.html">HOME</a></li>
+                    <li><a href="Rock.html#about">ABOUT</a></li>
+                    <li><a href="Programmes.html">PROGRAMS</a></li>
+                    <li><a href="our-team.html">OUR TEAM</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" onclick="document.querySelector('#navbar ul').classList.toggle('active')" aria-label="Toggle menu">  <!-- Hamburger toggle with ARIA -->
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Careers Section -->
+    <section id="careers" class="careers-section fade-in" role="main">  <!-- Main content role for accessibility -->
+        <h2>Careers & Vacancies</h2>  <!-- Main heading -->
+        <p>Join our team and make a meaningful difference in the lives of children. We offer a supportive environment, professional development, and the joy of seeing young lives transformed.</p>  <!-- Introductory paragraph -->
+        
+        <!-- Job Listings -->
+        <div class="job-listing card">  <!-- Reusable card class for consistent styling -->
+            <h3>Social Worker (Full-Time)</h3>  <!-- Job title -->
+            <p><strong>Requirements:</strong> Master's in Social Work (MSW), registration with SACSSP, and experience working with children and families.</p>  <!-- Job requirements -->
+            <p><strong>Responsibilities:</strong> Case management, counseling, family reunification support, and program coordination.</p>  <!-- Job responsibilities -->
+        </div>
+        
+        <div class="job-listing card">
+            <h3>Caregiver / Child and Youth Care Worker (Full-Time & Part-Time)</h3>
+            <p><strong>Requirements:</strong> Passion for children; experience or qualification in child care preferred; training provided for suitable candidates.</p>
+            <p><strong>Responsibilities:</strong> Daily care, emotional support, activity facilitation, and creating a nurturing home environment.</p>
+        </div>
+        
+        <div class="job-listing card">
+            <h3>Educator / Facilitator at Ikhaya Educare (Part-Time)</h3>
+            <p><strong>Requirements:</strong> ECD qualification (NQF Level 4/5), creativity, and love for early childhood development.</p>
+            <p><strong>Responsibilities:</strong> Leading play-based learning, arts & crafts, and preparing children for Grade R.</p>
+        </div>
+        
+        <!-- Call to Action -->
+        <a href="contact.html" class="vision-btn" style="display:inline-block; margin-top:40px;">Apply Now – Send Your CV</a>  <!-- Prominent application button -->
+    </section>
+
+    <!-- Standardized Footer -->
+    <footer id="main-footer" aria-label="Footer navigation">
+        <div class="footer-container">
+            <p>&copy; 2025 The Rock Children's Home</p>  <!-- Copyright notice -->
+            
+            <nav class="footer-nav" aria-label="Footer links">  <!-- Footer navigation with ARIA -->
+                <a href="careers.html">Careers & Vacancies</a>
+                <a href="#terms">Terms of Use</a>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="success-stories.html">Success Stories</a>  <!-- Link to success stories in footer -->
+            </nav>
+            
+            <div class="social-icons">  <!-- Social media icons container -->
+                <a href="https://www.facebook.com/TheRockHome" target="_blank" aria-label="Follow us on Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.youtube.com/TheRockHome" target="_blank" aria-label="Subscribe on YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://x.com/TheRockHome" target="_blank" aria-label="Follow us on X">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/TheRockHome" target="_blank" aria-label="Follow us on Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/27831234567" target="_blank" aria-label="Contact us on WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

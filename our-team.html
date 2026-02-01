@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team | The Rock Children's Home</title>  <!-- Clear page title -->
+    <link rel="stylesheet" href="Rock.css">
+<script src="https://kit.fontawesome.com/61008b03bb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Shared Header -->
+    <header id="main-header">
+        <div class="header-container">
+            <a href="Rock.html" class="logo-link" aria-label="Home page">  <!-- Logo link with ARIA for screen readers -->
+                <img src="images/logolink.jpeg" class="logo" alt="The Rock Logo">  <!-- Logo image with descriptive alt text -->
+            </a>
+            <nav id="navbar" aria-label="Main navigation">  <!-- Navigation with ARIA label -->
+                <ul>
+                    <li><a href="Rock.html">HOME</a></li>
+                    <li><a href="Rock.html#about">ABOUT</a></li>
+                    <li><a href="Programmes.html">PROGRAMS</a></li>
+                    <li><a href="our-team.html">OUR TEAM</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" onclick="document.querySelector('#navbar ul').classList.toggle('active')" aria-label="Toggle menu">  <!-- Hamburger toggle with ARIA -->
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section fade-in" role="main">  <!-- Main content role for accessibility -->
+        <h2>Meet Our Dedicated Team</h2>  <!-- Main heading -->
+        <p>Our compassionate staff and volunteers make The Rock a true home. With backgrounds in social work, education, and child psychology, they provide round-the-clock support.</p>  <!-- Introductory paragraph -->
+        
+        <!-- Team Grid -->
+        <div class="team-grid grid">  <!-- Reusable grid class for responsive layout -->
+            <div class="team-card card">  <!-- Individual team member card using reusable card class -->
+                <img src="images/director.jpeg" alt="Portrait of Jane Doe, Director">  <!-- Team member photo with descriptive alt -->
+                <h3>Hilda Masiza, Director</h3>  <!-- Name and position -->
+                <p>With 20+ years in child welfare, Hilda oversees operations and ensures every child feels secure.</p>  <!-- Short bio -->
+            </div>
+            <div class="team-card card">
+                <img src="images/social-worker.jpeg" alt="Portrait of John Smith, Social Worker">
+                <h3>Candicate, Social Worker</h3>
+                <p>Qualified MSW, specializing in trauma-informed care and family reunification.</p>
+            </div>
+            <div class="team-card card">
+                <img src="images/educator.jpeg" alt="Portrait of Alex Lee, Educator">
+                <h3>Candicate, Educator</h3>
+                <p>Leads Ikhaya programs, focusing on early development and fun learning activities.</p>
+            </div>
+            <div class="team-card card">
+                <img src="images/caregivers.jpeg" alt="Group photo of The Rock caregivers">
+                <h3>Our Caregivers</h3>
+                <p>Full-time and part-time staff providing 24/7 nurturing care.</p>
+            </div>
+            <div class="team-card card">
+                <img src="images/cook.jpeg" alt="Group photo of The Rock caregivers">
+                <h3>Candicate, Cook</h3>
+                <p>Our full-time cook providing 24/7 nutricious meals.</p>
+            </div>
+            <div class="team-card card">
+                <img src="images/nurse.jpeg" alt="Group photo of The Rock caregivers">
+                <h3>Nurse</h3>
+                <p>Our full time nurse on site everyday to provide the best medical care.</p>
+            </div>
+            <div class="team-card card">
+                <img src="images/caretakers.jpeg" alt="Group photo of The Rock caregivers">
+                <h3>Housekeeping & Maintanance</h3>
+                <p>Security and maintanance team, ensuring a clean and clean facility.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Standardized Footer -->
+    <footer id="main-footer" aria-label="Footer navigation">
+        <div class="footer-container">
+            <p>&copy; 2025 The Rock Children's Home</p>  <!-- Copyright notice -->
+            
+            <nav class="footer-nav" aria-label="Footer links">  <!-- Footer navigation with ARIA -->
+                <a href="careers.html">Careers & Vacancies</a>
+                <a href="#terms">Terms of Use</a>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="success-stories.html">Success Stories</a>  <!-- Link to success stories in footer -->
+            </nav>
+            
+            <div class="social-icons">  <!-- Social media icons container -->
+                <a href="https://www.facebook.com/TheRockHome" target="_blank" aria-label="Follow us on Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.youtube.com/TheRockHome" target="_blank" aria-label="Subscribe on YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://x.com/TheRockHome" target="_blank" aria-label="Follow us on X">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/TheRockHome" target="_blank" aria-label="Follow us on Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/27831234567" target="_blank" aria-label="Contact us on WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

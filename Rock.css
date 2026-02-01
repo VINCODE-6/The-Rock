@@ -1,0 +1,380 @@
+/* Reset and base styles - Normalize across browsers */
+* {
+    margin: 0;                  /* Remove default margins for all elements */
+    padding: 0;                 /* Remove default padding for all elements */
+    box-sizing: border-box;     /* Use border-box model for consistent sizing */
+}
+
+/* Global html/body styles - Ensure full width, no gaps, and base typography */
+html, body {
+    margin: 0;                  /* Eliminate default browser margins causing side gaps */
+    padding: 0;                 /* Remove any default padding */
+    width: 100%;                /* Force full screen width usage */
+    overflow-x: hidden;         /* Prevent horizontal scrollbars or overflow */
+    background-color: white;    /* Set white background as per theme */
+    font-family: 'Open Sans', sans-serif; /* Use clean, readable sans-serif font */
+    line-height: 1.6;           /* Improve text readability with line spacing */
+    color: #333;                /* Set default text color to dark gray */
+}
+
+/* Import Google Fonts - For elegant headings and body text */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap');
+
+/* Header and Navigation - Sticky bisque-themed header */
+#main-header {
+    background-color: bisque;   /* Use bisque as primary theme color */
+    padding: 15px 0;            /* Add vertical padding for spacing */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Add subtle shadow for depth */
+    position: sticky;           /* Make header stick to top on scroll */
+    top: 0;                     /* Position at top of viewport */
+    z-index: 100;               /* Ensure header layers above other content */
+}
+
+.header-container {
+    max-width: none;            /* Allow full width for edge-to-edge design */
+    margin: 0 auto;             /* Center content horizontally */
+    padding: 0 15px;            /* Add small side padding for mobile safety */
+    display: flex;              /* Use flexbox for layout */
+    justify-content: space-between; /* Space logo and nav at ends */
+    align-items: center;        /* Vertically align items */
+    width: 100%;                /* Ensure container spans full width */
+}
+
+.logo-link img {
+    height: 60px;               /* Set consistent logo height */
+    border-radius: 8px;         /* Add subtle rounding to logo */
+}
+
+#navbar ul {
+    list-style: none;           /* Remove default list bullets */
+    display: flex;              /* Display nav items horizontally */
+    gap: 30px;                  /* Add space between nav links */
+}
+
+#navbar ul li a {
+    text-decoration: none;      /* Remove underline from links */
+    color: #333;                /* Set link text color to dark gray */      
+    font-size: 1.2rem;          /* Slightly larger font for visibility */
+    transition: color 0.3s;     /* Smooth color change on hover */
+    font-family:cursive;
+    font-weight: bold;
+    gap:2px;
+
+}
+
+#navbar ul li a:hover {
+    color: #d2691e;             /* Change to warm chocolate on hover */
+}
+
+/* Mobile menu toggle - Hidden on desktop, shown on mobile */
+.menu-toggle {
+    display: none;              /* Hide by default on larger screens */
+    flex-direction: column;     /* Stack lines vertically */
+    gap: 5px;                   /* Space between hamburger lines */
+    cursor: pointer;            /* Show pointer cursor on hover */
+}
+
+.menu-toggle span {
+    width: 30px;                /* Width of each hamburger line */
+    height: 3px;                /* Height of each line */
+    background: #333;           /* Dark gray color for lines */
+}
+
+/* Hero/Home Section - Full-width background image with overlay */
+.home-section {
+    background: url('images/background1.jpeg') center/cover no-repeat;  /* Set background image, center and cover */
+    height: 80vh;               /* Set height to 80% of viewport for impact */
+    display: flex;              /* Use flex to center content */
+    align-items: center;        /* Vertically center overlay */
+    justify-content: center;    /* Horizontally center overlay */
+    text-align: center;         /* Center text inside overlay */
+    color: white;               /* White text for contrast on dark overlay */
+    position: relative;         /* Position relative for overlay pseudo-element */
+    width: 100vw;               /* Full viewport width for edge-to-edge */
+    max-width: none;            /* Override any max-width constraints */
+    margin-left: calc(50% - 50vw);  /* Negative margin to extend beyond container */
+    margin-right: calc(50% - 50vw); /* Same for right side symmetry */
+    padding-left: calc(50vw - 50%); /* Re-center inner content */
+    padding-right: calc(50vw - 50%); /* Align with page max-width */
+    margin: 0;                  /* Remove any extra margins */
+    padding: 0;                 /* Ensure no padding interferes */
+}
+
+.home-section::before {
+    content: '';                /* Empty content for pseudo-overlay */
+    position: absolute;         /* Cover entire section */
+    top: 0;                     /* Position from top */
+    left: 0;                    /* Position from left */
+    width: 100%;                /* Full width coverage */
+    height: 100%;               /* Full height coverage */
+    background: rgba(0, 0, 0, 0.4);  /* Semi-transparent dark overlay for text readability */
+    z-index: 1;                 /* Place behind content */
+}
+
+.home-overlay {
+    position: relative;         /* Position above overlay */
+    z-index: 2;                 /* Layer above pseudo-element */
+    background: rgba(255, 228, 196, 0.2);  /* Subtle bisque tint for theme */
+    padding: 40px;              /* Internal padding for content spacing */
+    border-radius: 10px;        /* Rounded corners for overlay box */
+    max-width: 800px;           /* Limit width for readability */
+}
+
+/* Buttons - Reusable styled buttons with hover */
+.vision-btn, .Programmes-btn, .contact-button a, .home-button {
+    display: inline-block;      /* Allow padding and margins */
+    background: #d2691e;        /* Warm chocolate background */
+    color: white;               /* White text for contrast */
+    padding: 12px 25px;         /* Padding for button size */
+    text-decoration: none;      /* Remove underline */
+    border-radius: 5px;         /* Rounded corners */
+    margin: 20px 0;             /* Vertical spacing */
+    font-weight: 600;           /* Bold text */
+    transition: background 0.3s; /* Smooth hover transition */
+}
+
+.vision-btn:hover, .Programmes-btn:hover, .contact-button a:hover, .home-button:hover {
+    background: #b5651d;        /* Darker shade on hover */
+}
+
+/* General Sections - Consistent padding and centering for all sections */
+section {
+    padding: 60px 20px;         /* Vertical padding with side margins */
+    max-width: 1200px;          /* Limit content width for readability */
+    margin: 0 auto;             /* Center sections horizontally */
+}
+
+h2 {
+    font-family: 'Playfair Display', serif; /* Elegant serif font for headings */
+    color: #d2691e;             /* Warm chocolate color */
+    margin-bottom: 20px;        /* Space below headings */
+    font-size: 2.5rem;          /* Large heading size */
+    text-align: center;         /* Center headings by default */
+}
+
+p {
+    margin-bottom: 20px;        /* Space below paragraphs */
+    font-size: 1.1rem;          /* Slightly larger body text */
+}
+
+/* Reusable Card Class - For programs, team, stories, jobs, etc. */
+.card {
+    background: white;          /* Clean white background */
+    padding: 30px;              /* Internal padding */
+    margin: 30px auto;          /* Vertical spacing and centering */
+    max-width: 800px;           /* Limit width for readability */
+    border-radius: 10px;        /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    animation: fadeIn 1s ease-in; /* Fade-in animation on load */
+}
+
+/* Reusable Grid Class - For galleries, teams, testimonials, etc. */
+.grid {
+    display: grid;              /* Enable grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns, min 300px */
+    gap: 30px;                  /* Space between grid items */
+    max-width: 1200px;          /* Match section max-width */
+    margin: 40px auto;          /* Center grid with vertical spacing */
+}
+
+/* Reusable Image Styles - For cards, grids, galleries */
+.card img, .grid img {
+    width: 100%;                /* Full width of container */
+    height: 250px;              /* Uniform height for consistency */
+    object-fit: cover;          /* Crop images to fit without distortion */
+    border-radius: 10px;        /* Rounded corners */
+    margin-bottom: 20px;        /* Space below images */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Subtle shadow */
+    transition: transform 0.3s; /* Smooth zoom transition on hover */
+}
+
+.card img:hover, .grid img:hover {
+    transform: scale(1.05);     /* Slight zoom on hover for interaction */
+}
+
+/* Gallery Section - Specific tweaks if needed */
+.gallery-section {
+    background-color: #fff8f0;  /* Light bisque tint for warmth */
+    text-align: center;         /* Center text content */
+}
+
+/* Testimonials Section - Specific styles */
+.testimonials-section {
+    background: #fff8f0;        /* Warm bisque background */
+    text-align: center;         /* Center headings and paragraphs */
+}
+
+.testimonial-card {
+    font-style: italic;         /* Italic text for quote feel */
+    font-size: 1.1rem;          /* Slightly larger quote text */
+}
+
+.testimonial-card cite {
+    display: block;             /* Block for new line */
+    margin-top: 15px;           /* Space above citation */
+    font-style: normal;         /* Normal style for cite */
+    color: #d2691e;             /* Theme color */
+    font-weight: 600;           /* Bold citation */
+}
+
+/* Programs Section - Specific for program cards */
+.programs-section {
+    text-align: center;         /* Center headings */
+}
+
+.program-card h3 {
+    font-family: 'Playfair Display', serif; /* Elegant heading font */
+    color: #d2691e;             /* Theme color */
+    font-size: 2rem;            /* Larger subheadings */
+    margin-bottom: 15px;        /* Space below */
+}
+
+.program-card ul {
+    list-style: disc;           /* Bullet points */
+    padding-left: 40px;         /* Indent list */
+    text-align: left;           /* Left-align bullets for readability */
+    font-size: 1.1rem;          /* Consistent text size */
+}
+
+/* Vision Section - Specific styles */
+.vision-section blockquote {
+    font-style: italic;         /* Italic for quotes */
+    font-size: 1.3rem;          /* Larger quote text */
+    color: #d2691e;             /* Theme color */
+    border-left: 5px solid #d2691e; /* Left border for emphasis */
+    padding-left: 20px;         /* Indent quote */
+    margin: 20px 0;             /* Vertical spacing */
+}
+
+/* Team Section - Specific for team cards */
+.team-section {
+    text-align: center;         /* Center text */
+}
+
+.team-card img {
+    border-radius: 50%;         /* Circular portraits for warmth */
+}
+
+/* Success Stories Section - Specific tweaks */
+.success-section {
+    text-align: center;         /* Center headings */
+}
+
+/* Careers Section - Specific for job listings */
+.careers-section {
+    text-align: center;         /* Center content */
+}
+
+/* Contact Form - Specific styles */
+.contact-section {
+    max-width: 800px;           /* Narrower for form focus */
+    text-align: center;         /* Center headings */
+}
+
+.contact-form {
+    display: flex;              /* Flex column layout */
+    flex-direction: column;     /* Stack form fields vertically */
+    gap: 20px;                  /* Space between fields */
+    text-align: left;           /* Left-align labels/inputs */
+}
+
+.contact-form label {
+    font-weight: 600;           /* Bold labels */
+    color: #333;                /* Dark text */
+}
+
+.contact-form input, .contact-form select, .contact-form textarea {
+    padding: 12px;              /* Internal padding */
+    border: 1px solid #ccc;     /* Light border */
+    border-radius: 5px;         /* Rounded corners */
+    font-size: 1rem;            /* Consistent font size */
+}
+
+.contact-form button {
+    align-self: center;         /* Center submit button */
+    padding: 15px 40px;         /* Larger button size */
+}
+
+/* Footer - Bisque-themed with social icons */
+#main-footer {
+    background: bisque;         /* Bisque background */
+    text-align: center;         /* Center content */
+    padding: 20px;              /* Vertical padding */
+    margin-top:40px;           /* Space above footer */
+}
+
+.footer-nav a {
+    margin: 0 15px;             /* Space between links */
+    color: #333;                /* Dark link color */
+    text-decoration: none;      /* No underline */
+}
+
+.social-icons a {
+    margin: 0 15px;             /* Space between icons */
+    font-size: 28px;            /* Larger icon size */
+    color: #d2691e;             /* Theme color */
+    transition: transform 0.3s, color 0.3s; /* Hover transitions */
+    padding-top:20px;
+}
+
+.social-icons a:hover {
+    color: #b5651d;             /* Darker hover color */
+    transform: scale(1.2);      /* Slight zoom on hover */
+}
+
+/* Animations - Fade-in for elements */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }  /* Start faded and shifted down */
+    to { opacity: 1; transform: translateY(0); }       /* End fully visible and in place */
+}
+
+/* High-Contrast Mode - Accessibility override */
+.high-contrast {
+    background-color: #fff !important;  /* Force white background */
+    color: #000 !important;             /* Black text for max contrast */
+}
+
+.high-contrast a, .high-contrast h2, .high-contrast .vision-btn {
+    color: #000 !important;             /* Black for links/headings/buttons */
+    background: #fff !important;        /* White background */
+    border: 2px solid #000 !important;  /* Black borders for visibility */
+}
+
+.high-contrast img {
+    filter: contrast(150%);             /* Increase image contrast */
+}
+
+/* Remove default underline from all social icon links */
+.social-icons a {
+    text-decoration: none;         /* Removes the underline completely */
+    display: inline-block;         /* Ensures consistent spacing and hover behavior */
+    line-height: 1;                /* Prevents any extra vertical space causing visual lines */
+    margin-top:8px;
+}
+
+/* Optional: Add subtle spacing and ensure icons are perfectly centered */
+.social-icons a i {
+    display: block;                /* Makes the icon behave cleanly within the link */
+}
+
+/* Responsive Media Queries - For mobile devices */
+@media (max-width: 768px) {
+    #navbar ul {
+        display: none;          /* Hide nav list on mobile */
+        flex-direction: column; /* Stack vertically when shown */
+        background: bisque;     /* Match header background */
+        position: absolute;     /* Position below header */
+        top: 100%;              /* Start right below header */
+        left: 0;                /* Full left alignment */
+        width: 100%;            /* Full width */
+        padding: 20px;          /* Internal padding */
+    }
+
+    #navbar ul.active {
+        display: flex;          /* Show nav when toggled */
+    }
+
+    .menu-toggle {
+        display: flex;          /* Show hamburger on mobile */
+    }
+}

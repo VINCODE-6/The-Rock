@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Vision | The Rock Children's Home</title>  <!-- Clear page title -->
+    <link rel="stylesheet" href="Rock.css">
+<script src="https://kit.fontawesome.com/61008b03bb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Shared Header -->
+    <header id="main-header">
+        <div class="header-container">
+            <a href="Rock.html" class="logo-link" aria-label="Home page">  <!-- Logo link with ARIA for screen readers -->
+                <img src="images/logolink.jpeg" class="logo" alt="The Rock Logo">  <!-- Logo image with descriptive alt text -->
+            </a>
+            <nav id="navbar" aria-label="Main navigation">  <!-- Navigation with ARIA label -->
+                <ul>
+                    <li><a href="Rock.html">HOME</a></li>
+                    <li><a href="Rock.html#about">ABOUT</a></li>
+                    <li><a href="Programmes.html">PROGRAMS</a></li>
+                    <li><a href="our-team.html">OUR TEAM</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" onclick="document.querySelector('#navbar ul').classList.toggle('active')" aria-label="Toggle menu">  <!-- Hamburger toggle with ARIA -->
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Vision Section -->
+    <section id="vision-page" class="vision-section fade-in" role="main">  <!-- Main content role for accessibility -->
+        <h2>Our Vision</h2>  <!-- Main heading -->
+        <p>Our vision is to create a safe, loving, and empowering home where every child is given the opportunity to heal, grow, and reach their full potential.</p>  <!-- Core vision statement -->
+        
+        <!-- Highlight Box for Emphasis -->
+        <div class="vision-highlight" style="background:#fff8f0; padding:40px; border-radius:10px; margin:40px 0;">  <!-- Warm highlighted section -->
+            <img src="images/vision-hope.jpeg" alt="Children in a nurturing and hopeful environment" style="width:100%; border-radius:10px; margin-bottom:20px;">  <!-- Image with descriptive alt -->
+            <blockquote>"A place of stability and hope, nurturing children physically, emotionally, spiritually, and intellectually."</blockquote>  <!-- Inspirational quote -->
+        </div>
+        
+        <p>We strive to equip children with confidence, skills, and values for success in school and life. Through compassionate care, we envision every child leaving The Rock prepared for a brighter future.</p>  <!-- Closing vision paragraph -->
+        
+        <!-- Inspirational Image Grid -->
+        <div class="vision-grid grid">  <!-- Reusable grid class for layout -->
+            <img src="images/vision-stability.jpeg" alt="Symbolic image representing stability and growth">  <!-- First inspirational image -->
+            <img src="images/vision-nurture.jpeg" alt="Warm scene of nurturing care and family">  <!-- Second inspirational image -->
+        </div>
+    </section>
+
+    <!-- Standardized Footer -->
+    <footer id="main-footer" aria-label="Footer navigation">
+        <div class="footer-container">
+            <p>&copy; 2025 The Rock Children's Home</p>  <!-- Copyright notice -->
+            
+            <nav class="footer-nav" aria-label="Footer links">  <!-- Footer navigation with ARIA -->
+                <a href="careers.html">Careers & Vacancies</a>
+                <a href="#terms">Terms of Use</a>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="success-stories.html">Success Stories</a>  <!-- Link to success stories in footer -->
+            </nav>
+            
+            <div class="social-icons">  <!-- Social media icons container -->
+                <a href="https://www.facebook.com/TheRockHome" target="_blank" aria-label="Follow us on Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.youtube.com/TheRockHome" target="_blank" aria-label="Subscribe on YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://x.com/TheRockHome" target="_blank" aria-label="Follow us on X">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/TheRockHome" target="_blank" aria-label="Follow us on Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/27831234567" target="_blank" aria-label="Contact us on WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

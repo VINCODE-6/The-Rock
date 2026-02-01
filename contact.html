@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | The Rock Children's Home</title>  <!-- Clear page title -->
+    <link rel="stylesheet" href="Rock.css">
+<script src="https://kit.fontawesome.com/61008b03bb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Shared Header -->
+    <header id="main-header">
+        <div class="header-container">
+            <a href="Rock.html" class="logo-link" aria-label="Home page">  <!-- Logo link with ARIA for screen readers -->
+                <img src="images/logolink.jpeg" class="logo" alt="The Rock Logo">  <!-- Logo image with descriptive alt text -->
+            </a>
+            <nav id="navbar" aria-label="Main navigation">  <!-- Navigation with ARIA label -->
+                <ul>
+                    <li><a href="Rock.html">HOME</a></li>
+                    <li><a href="Rock.html#about">ABOUT</a></li>
+                    <li><a href="Programmes.html">PROGRAMS</a></li>
+                    <li><a href="our-team.html">OUR TEAM</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" onclick="document.querySelector('#navbar ul').classList.toggle('active')" aria-label="Toggle menu">  <!-- Hamburger toggle with ARIA -->
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact-section fade-in" role="main">  <!-- Main content role for accessibility -->
+        <h2>Contact Us</h2>  <!-- Main heading -->
+        <p>Reach out for inquiries, registrations, volunteering, donations, or support. We're here to help!</p>  <!-- Introductory paragraph -->
+        
+        <!-- Contact Form -->
+        <form action="https://formspree.io/f/your-email" method="POST" class="contact-form">  <!-- Form action (replace with your Formspree endpoint or backend) -->
+            <label for="name">Name:</label>  <!-- Label for name field -->
+            <input type="text" id="name" name="name" required aria-required="true">  <!-- Required name input with ARIA -->
+            
+            <label for="email">Email:</label>  <!-- Label for email field -->
+            <input type="email" id="email" name="email" required aria-required="true">  <!-- Required email input with ARIA -->
+            
+            <label for="subject">Subject:</label>  <!-- Label for subject dropdown -->
+            <select id="subject" name="subject" aria-label="Select inquiry type">  <!-- Dropdown with ARIA label -->
+                <option value="general">General Inquiry</option>
+                <option value="register">Register at Ikhaya</option>
+                <option value="volunteer">Volunteer</option>
+                <option value="donate">Donate</option>
+                <option value="sponsor">Sponsor a Child</option>
+            </select>
+            
+            <label for="message">Message:</label>  <!-- Label for message textarea -->
+            <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>  <!-- Required message textarea with ARIA -->
+            
+            <button type="submit" class="vision-btn">Send Message</button>  <!-- Submit button styled consistently -->
+        </form>
+    </section>
+
+    <!-- Standardized Footer -->
+    <footer id="main-footer" aria-label="Footer navigation">
+        <div class="footer-container">
+            <p>&copy; 2025 The Rock Children's Home</p>  <!-- Copyright notice -->
+            
+            <nav class="footer-nav" aria-label="Footer links">  <!-- Footer navigation with ARIA -->
+                <a href="careers.html">Careers & Vacancies</a>
+                <a href="#terms">Terms of Use</a>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="success-stories.html">Success Stories</a>  <!-- Link to success stories in footer -->
+            </nav>
+            
+            <div class="social-icons">  <!-- Social media icons container -->
+                <a href="https://www.facebook.com/TheRockHome" target="_blank" aria-label="Follow us on Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.youtube.com/TheRockHome" target="_blank" aria-label="Subscribe on YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://x.com/TheRockHome" target="_blank" aria-label="Follow us on X">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/TheRockHome" target="_blank" aria-label="Follow us on Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/27831234567" target="_blank" aria-label="Contact us on WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

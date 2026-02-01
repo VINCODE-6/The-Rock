@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rock Children's Home</title>
+    <link rel="stylesheet" href="Rock.css">
+<script src="https://kit.fontawesome.com/61008b03bb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Shared Header -->
+    <header id="main-header">
+        <div class="header-container">
+            <a href="Rock.html" class="logo-link" aria-label="Home page">  <!-- Logo link with ARIA for accessibility -->
+                <img src="images/logolink.jpeg" class="logo" alt="The Rock Logo">  <!-- Logo image with alt text -->
+            </a>
+            <nav id="navbar" aria-label="Main navigation">  <!-- Navigation with ARIA label -->
+                <ul>
+                    <li><a href="Rock.html">HOME</a></li>
+                    <li><a href="Rock.html#about">ABOUT</a></li>
+                    <li><a href="Programmes.html">PROGRAMS</a></li>
+                    <li><a href="our-team.html">OUR TEAM</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" onclick="document.querySelector('#navbar ul').classList.toggle('active')" aria-label="Toggle menu">  <!-- Hamburger menu toggle with ARIA -->
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="home-section" role="main">  <!-- Hero with main role -->
+        <div class="home-overlay">
+            <h2>The ROCK Children's Home</h2>
+            <p>Every child deserves a home</p>
+            <a href="#about" class="home-button">Read More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section" role="main">
+        <h2>About Us</h2>
+        <p>Many of the children who come to The Rock have not had the opportunity to grow and develop in a stable, nurturing environment. For this reason, a healthy and nutritious diet, age-appropriate physical activity, and strong psychological development are core to everything we do.</p>
+        
+        <p>In partnership with Ikhaya Educare Center, we run a weekly crèche from 08:00 to 16:30, providing structured early childhood development that supports children mentally, physically, emotionally, and socially in a safe and caring environment.</p>
+        
+        <p>Our programme is divided into four age-appropriate groups:</p>
+        <ul>
+            <li>Group A: 0 to 18 months</li>
+            <li>Group B: 18 months to 3 years</li>
+            <li>Group C: 3 years to 6 years</li>
+            <li>Group D: 6 years to 18 years</li>
+        </ul>
+        
+        <p>At The Rock Children's Home, we are committed to laying strong foundations — offering not just care, but hope, stability, and the opportunity for every child to thrive.</p>
+        
+        <a href="Ourvision.html" class="vision-btn">Our Vision</a>  <!-- Vision button as requested -->
+        <a href="get-involved.html" class="vision-btn" style="margin-left:20px;">Get Involved</a>  <!-- Get Involved button -->
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section fade-in" role="main">
+        <h2>A Glimpse into Daily Life at The Rock</h2>
+        <p>Our children enjoy playtime, learning, meals, and rest in a safe and loving environment.</p>
+        
+        <div class="gallery-grid grid">  <!-- Reusable grid class -->
+            <img src="images/gallery-play1.jpg" alt="Children playing outdoors">
+            <img src="images/gallery-play2.jpg" alt="Kids laughing together">
+            <img src="images/gallery-learning1.jpg" alt="Children in classroom activities">
+            <img src="images/gallery-meal1.jpg" alt="Family-style dining">
+            <img src="images/gallery-bedroom1.jpg" alt="Cozy bedroom">
+            <img src="images/gallery-play3.jpg" alt="Outdoor fun">
+            <img src="images/gallery-learning2.jpg" alt="Arts and crafts">
+            <img src="images/gallery-celebration1.jpg" alt="Birthday celebration">
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section fade-in" role="main">
+        <h2>What Others Say</h2>
+        <p>Hear from volunteers, donors, and families who've experienced The Rock's impact.</p>
+        
+        <div class="testimonial-grid grid">
+            <div class="testimonial-card card">
+                <p>"Visiting The Rock was life-changing. The staff's dedication to these children is inspiring."</p>
+                <cite>– Volunteer, 2025</cite>
+            </div>
+            <div class="testimonial-card card">
+                <p>"Our adopted child thrived here. The programs helped them process grief and build confidence."</p>
+                <cite>– Adoptive Parent</cite>
+            </div>
+            <div class="testimonial-card card">
+                <p>"The kids are so welcoming and full of joy. Helping with homework and playtime was the highlight of my year!"</p>
+                <cite>– Donor & Visitor</cite>
+            </div>
+            <div class="testimonial-card card">
+                <p>"This organization pours their hearts into serving orphaned children. I've seen real transformations."</p>
+                <cite>– Long-time Supporter</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Standardized Footer -->
+    <footer id="main-footer" aria-label="Footer navigation">
+        <div class="footer-container">
+            <p>&copy; 2025 The Rock Children's Home</p>
+            
+            <nav class="footer-nav" aria-label="Footer links">
+                <a href="careers.html">Careers & Vacancies</a>
+                <a href="#terms">Terms of Use</a>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="success-stories.html">Success Stories</a>
+            </nav>
+            
+            <div class="social-icons">
+                <a href="https://www.facebook.com/TheRockHome" target="_blank" aria-label="Follow us on Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.youtube.com/TheRockHome" target="_blank" aria-label="Subscribe on YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://x.com/TheRockHome" target="_blank" aria-label="Follow us on X">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/TheRockHome" target="_blank" aria-label="Follow us on Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/27831234567" target="_blank" aria-label="Contact us on WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

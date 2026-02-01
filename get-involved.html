@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved | The Rock Children's Home</title>  <!-- Clear page title -->
+    <link rel="stylesheet" href="Rock.css">
+<script src="https://kit.fontawesome.com/61008b03bb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Shared Header -->
+    <header id="main-header">
+        <div class="header-container">
+            <a href="Rock.html" class="logo-link" aria-label="Home page">  <!-- Logo link with ARIA for screen readers -->
+                <img src="images/logolink.jpeg" class="logo" alt="The Rock Logo">  <!-- Logo image with descriptive alt text -->
+            </a>
+            <nav id="navbar" aria-label="Main navigation">  <!-- Navigation with ARIA label -->
+                <ul>
+                    <li><a href="Rock.html">HOME</a></li>
+                    <li><a href="Rock.html#about">ABOUT</a></li>
+                    <li><a href="Programmes.html">PROGRAMS</a></li>
+                    <li><a href="our-team.html">OUR TEAM</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" onclick="document.querySelector('#navbar ul').classList.toggle('active')" aria-label="Toggle menu">  <!-- Hamburger toggle with ARIA -->
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Get Involved Section -->
+    <section class="involve-section fade-in" role="main">  <!-- Main content role for accessibility -->
+        <h2>Get Involved</h2>  <!-- Main heading -->
+        <p>Your support changes lives. There are many ways to make a difference at The Rock Children's Home.</p>  <!-- Introductory paragraph -->
+        
+        <!-- Involvement Options Grid -->
+        <div class="involve-grid grid">  <!-- Reusable grid class for responsive layout -->
+            <div class="involve-card card fade-in">  <!-- Individual card using reusable card class -->
+                <img src="images/volunteer1.jpeg" alt="Volunteer helping children with activities">  <!-- Image with descriptive alt -->
+                <h3>Volunteer</h3>  <!-- Option title -->
+                <p>Join our team – help with tutoring, playtime, maintenance, or events.</p>  <!-- Description -->
+                <a href="contact.html" class="vision-btn">Apply to Volunteer</a>  <!-- Call-to-action button -->
+            </div>
+            
+            <div class="involve-card card fade-in">
+                <img src="images/donate1.jpeg" alt="Donating supplies and gifts to children">
+                <h3>Donate</h3>
+                <p>Financial gifts, food, clothes, toys, or school supplies – every contribution helps.</p>
+                <a href="contact.html" class="vision-btn">Donate Now</a>
+            </div>
+            
+            <div class="involve-card card fade-in">
+                <img src="images/sponsor1.jpeg" alt="Sponsoring a child's education and care">
+                <h3>Sponsor a Child</h3>
+                <p>Provide ongoing support for one child's education, health, and care.</p>
+                <a href="contact.html" class="vision-btn">Become a Sponsor</a>
+            </div>
+        </div>
+        
+        <!-- News & Events Section -->
+        <h2 style="margin-top:80px;">News & Events</h2>  <!-- Secondary heading -->
+        <p>Stay updated with what's happening at The Rock.</p>  <!-- Description -->
+        
+        <div class="news-grid grid">  <!-- Grid for news cards -->
+            <div class="news-card card fade-in">  <!-- Individual news card -->
+                <img src="images/event-birthday.jpeg" alt="Children celebrating a birthday party">  <!-- Image with alt -->
+                <h4>Annual Christmas Party – December 2025</h4>  <!-- Event title -->
+                <p>Join us for gifts, games, and festive fun!</p>  <!-- Event description -->
+            </div>
+            <div class="news-card card fade-in">
+                <img src="images/school.jpeg" alt="Community back-to-school drive event">
+                <h4>Back-to-School Drive – January 2026</h4>
+                <p>Help us collect uniforms and supplies.</p>
+            </div>
+        </div>
+        
+        <!-- Social Media Embed (X Timeline) -->
+        <div class="social-embed" style="margin-top:80px; text-align:center;">  <!-- Container for X feed -->
+            <h3>Follow Us on X</h3>  <!-- Feed title -->
+            <a class="twitter-timeline" data-theme="light" data-height="600" href="https://twitter.com/TheRockHome?ref_src=twsrc%5Etfw">Tweets by TheRockHome</a>  <!-- X timeline widget (replace username if needed) -->
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  <!-- Required script for widget -->
+        </div>
+    </section>
+
+    <!-- Standardized Footer -->
+    <footer id="main-footer" aria-label="Footer navigation">
+        <div class="footer-container">
+            <p>&copy; 2025 The Rock Children's Home</p>  <!-- Copyright notice -->
+            
+            <nav class="footer-nav" aria-label="Footer links">  <!-- Footer navigation with ARIA -->
+                <a href="careers.html">Careers & Vacancies</a>
+                <a href="#terms">Terms of Use</a>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="success-stories.html">Success Stories</a>  <!-- Link to success stories in footer -->
+            </nav>
+            
+            <div class="social-icons">  <!-- Social media icons container -->
+                <a href="https://www.facebook.com/TheRockHome" target="_blank" aria-label="Follow us on Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.youtube.com/TheRockHome" target="_blank" aria-label="Subscribe on YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://x.com/TheRockHome" target="_blank" aria-label="Follow us on X">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/TheRockHome" target="_blank" aria-label="Follow us on Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/27831234567" target="_blank" aria-label="Contact us on WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

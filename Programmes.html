@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs | The Rock Children's Home</title>  <!-- Updated title for consistency -->
+    <link rel="stylesheet" href="Rock.css">
+<script src="https://kit.fontawesome.com/61008b03bb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Shared Header -->
+    <header id="main-header">
+        <div class="header-container">
+            <a href="Rock.html" class="logo-link" aria-label="Home page">  <!-- Logo with ARIA -->
+                <img src="images/logolink.jpeg" class="logo" alt="The Rock Logo">
+            </a>
+            <nav id="navbar" aria-label="Main navigation">  <!-- Nav with ARIA -->
+                <ul>
+                    <li><a href="Rock.html">HOME</a></li>
+                    <li><a href="Rock.html#about">ABOUT</a></li>
+                    <li><a href="Programmes.html">PROGRAMS</a></li>
+                    <li><a href="our-team.html">OUR TEAM</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" onclick="document.querySelector('#navbar ul').classList.toggle('active')" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Programs Section -->
+    <section id="programs" class="programs-section fade-in" role="main">  <!-- Main role added -->
+        <h2>Our Programs</h2>
+        <p>At The Rock, our programs are designed to nurture every aspect of a child's growth, supporting healing, education, and family bonds with holistic care.</p>
+        
+        <!-- Early Childhood Development Card -->
+        <div class="program-card card fade-in">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#d2691e" stroke-width="2" aria-hidden="true">  <!-- Decorative SVG icon -->
+                <path d="M12 2L2 7L12 12L22 7L12 2Z" />
+                <path d="M2 17L12 22L22 17" />
+                <path d="M2 12L12 17L22 12" />
+            </svg>
+            <h3>Early Childhood Development</h3>
+            <p>Structured play-based learning with emotional support and skill-building activities for ages 0-6.</p>
+            <ul>
+                <li>Age-appropriate groups</li>
+                <li>Mental, physical, and social growth focus</li>
+                <li>Grief and loss workshops</li>
+            </ul>
+            
+            <!-- Nested Ikhaya Subsection -->
+            <div class="ikhaya-subsection" style="background:#fff8f0; padding:30px; border-radius:10px; margin:30px 0;">
+                <h4>Ikhaya Educare Center</h4>
+                <p>On-site crèche and pre-primary school with Grade R syllabus and creative activities.</p>
+                <img src="images/ikhaya-class1.jpeg" alt="Children learning at Ikhaya Educare Center" style="width:100%; max-width:600px; border-radius:10px; margin:20px 0;">
+                <img src="images/ikhaya-class2.jpeg" alt="Arts and crafts activities at Ikhaya" style="width:100%; max-width:600px; border-radius:10px; margin:20px 0;">
+                <p>Give your child a strong foundation in a loving environment.</p>
+                <a href="contact.html" class="vision-btn">Register Your Child at Ikhaya</a>
+            </div>
+        </div>
+        
+        <!-- Residential Care Card -->
+        <div class="program-card card fade-in">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#d2691e" stroke-width="2" aria-hidden="true">
+                <path d="M3 12L5 10M5 10L12 3L19 10M5 10V20C5 21.1046 5.89543 22 7 22H17C18.1046 22 19 21.1046 19 20V10" />
+                <path d="M9 22V12H15V22" />
+            </svg>
+            <h3>Residential Care</h3>
+            <p>24/7 family-style homes with nutritious meals, psychological support, and independence-building routines.</p>
+            <ul>
+                <li>Compassionate staff care</li>
+                <li>Family reunification focus</li>
+                <li>Secure daily routines</li>
+            </ul>
+        </div>
+        
+        <!-- Foster Care and Adoption Card -->
+        <div class="program-card card fade-in">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#d2691e" stroke-width="2" aria-hidden="true">
+                <path d="M12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2Z" />
+                <path d="M12 6V18M6 12H18" />
+            </svg>
+            <h3>Foster Care and Adoption</h3>
+            <p>Training, matching, and ongoing support for forever homes with cultural sensitivity.</p>
+            <ul>
+                <li>Reunification support</li>
+                <li>Adoption workshops</li>
+                <li>Post-placement care</li>
+            </ul>
+        </div>
+        
+        <!-- Donate Card -->
+        <div class="program-card card fade-in">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#d2691e" stroke-width="2" aria-hidden="true">
+                <path d="M21 15V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V15" />
+                <path d="M17 8L12 3L7 8" />
+                <path d="M12 3V15" />
+            </svg>
+            <h3>Donate</h3>
+            <p>Your gifts provide essentials and enriching experiences for the children.</p>
+            <a href="get-involved.html" class="vision-btn">Get Involved</a>
+        </div>
+        
+        <!-- Our Children Section -->
+        <div class="program-card card fade-in">
+            <h3>Our Children</h3>
+            <p>Meet some of the incredible children who call The Rock home (privacy protected).</p>
+            <div class="gallery-grid grid">
+                <img src="images/child-story1.jpeg" alt="Child enjoying activities">
+                <img src="images/child-potrait.jpeg" alt="Happy child portrait">
+                <img src="images/child-story3.jpeg" alt="Child playing outdoors">
+                <img src="images/child-story4.jpeg" alt="Child learning">
+            </div>
+        </div>
+    </section>
+
+    <!-- Standardized Footer -->
+    <footer id="main-footer" aria-label="Footer navigation">
+        <div class="footer-container">
+            <p>&copy; 2025 The Rock Children's Home</p>
+            
+            <nav class="footer-nav" aria-label="Footer links">
+                <a href="careers.html">Careers & Vacancies</a>
+                <a href="#terms">Terms of Use</a>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="success-stories.html">Success Stories</a>
+            </nav>
+            
+            <div class="social-icons">
+                <a href="https://www.facebook.com/TheRockHome" target="_blank" aria-label="Follow us on Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.youtube.com/TheRockHome" target="_blank" aria-label="Subscribe on YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://x.com/TheRockHome" target="_blank" aria-label="Follow us on X">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/TheRockHome" target="_blank" aria-label="Follow us on Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/27831234567" target="_blank" aria-label="Contact us on WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
