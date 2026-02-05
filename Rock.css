@@ -377,4 +377,23 @@ p {
     .menu-toggle {
         display: flex;          /* Show hamburger on mobile */
     }
+
+}
+
+/* Story images - make them smaller, centered, and fit nicely */
+.story-image {
+    width: 100%;                    /* Still fills the card width (but card itself is limited) */
+    max-width: 500px;               /* Maximum width - prevents huge full-screen images */
+    height: auto;                   /* Keeps natural aspect ratio - very important! */
+    display: block;                 /* Removes any unwanted bottom space */
+    margin: 0 auto 20px;            /* Centers the image + adds bottom spacing */
+    border-radius: 12px;            /* Softer, modern rounded corners */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12); /* Gentle shadow for depth */
+    object-fit: cover;              /* Crops nicely if needed, but keeps proportions */
+    transition: transform 0.3s ease; /* Optional: subtle hover effect */
+}
+
+/* Optional hover effect - makes it feel interactive */
+.story-image:hover {
+    transform: scale(1.03);         /* Very slight zoom on hover */
 }
