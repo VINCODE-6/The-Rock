@@ -10,7 +10,23 @@
 <body>
     <!-- Shared Header with updated navbar -->
     <header id="main-header">
-        <!-- As above -->
+        <div class="header-container">
+            <a href="index.html" class="logo-link" aria-label="Home page">  <!-- Logo link with ARIA for screen readers -->
+                <img src="images/logolink.jpeg" class="logo" alt="The Rock Logo">  <!-- Logo image with descriptive alt text -->
+            </a>
+            <nav id="navbar" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#about">ABOUT</a></li>
+                <li><a href="Programmes.html">PROGRAMS</a></li>
+                <li><a href="our-team.html">OUR TEAM</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+            <div class="menu-toggle" onclick="document.querySelector('#navbar ul').classList.toggle('active')" aria-label="Toggle menu">  <!-- Hamburger toggle with ARIA -->
+                <span></span><span></span><span></span>
+            </div>
+        </div>
     </header>
 
     <section id="success" class="success-section fade-in">
@@ -65,4 +81,5 @@
 </body>
 
 </html>
+
 
